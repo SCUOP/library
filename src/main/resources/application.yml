@@ -7,7 +7,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/library?serverTimezone=UTC
       username: root
-      password: "#Wdl200210"
+      password: password
 
 mybatis-plus:
   global-config:
