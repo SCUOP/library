@@ -31,7 +31,7 @@ Maven\-3\.8\.6，Java19，Spring\-Boot\-2\.7\.6\(mybatis\-plus暂时未适配Spr
 
 4\. 对spring\-web，mybatis\-plus，druid，JWT进行了完整正确的整合。
 
-2、列出项目中你认为 “具有创新性”或“具有拓展性”的功能实现或实现思想。
+2、功能实现或实现思想。
 
   1\. 使用lomlok，极大的简化了bean和java实体类的书写。
 
@@ -48,7 +48,3 @@ Maven\-3\.8\.6，Java19，Spring\-Boot\-2\.7\.6\(mybatis\-plus暂时未适配Spr
   2\. Result的设计不够完美，没有接受http\-code的变量。
 
   3\. vue的拦截器没有实现。
-
-__温馨小帖士__：请认真填写上面的“1”和“2”这两部分，这两部分写得越丰富越好，这两部分是__评分__的__重要依据__。
-
-
