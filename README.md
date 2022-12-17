@@ -44,105 +44,58 @@ library
 ├─ file\_tree\.txt
 
 ├─ library\.sql
-
 ├─ mvnw
-
 ├─ mvnw\.cmd
-
 ├─ pom\.xml
-
 ├─ src
-
 │    ├─ main
-
 │    │    ├─ java
-
 │    │    └─ resources
-
 │    └─ test
-
 │           └─ java
 
+
+
 main
-
 ├─ java
-
 │    └─ com
-
 │           └─ scuop
-
 │                  ├─ annotation
-
 │                  │    ├─ PassToken\.java
-
 │                  │    └─ UserLoginToken\.java
-
 │                  ├─ config
-
 │                  │    └─ MPConfig\.java
-
 │                  ├─ controller
-
 │                  │    ├─ BookController\.java
-
 │                  │    └─ UserController\.java
-
 │                  ├─ dao
-
 │                  │    ├─ BookDao\.java
-
 │                  │    └─ UserDao\.java
-
 │                  ├─ domain
-
 │                  │    ├─ Book\.java
-
 │                  │    └─ User\.java
-
 │                  ├─ interceptors
-
 │                  │    └─ AuthenticationInterceptor\.java
-
 │                  ├─ libraryApplication\.java
-
 │                  ├─ service
-
 │                  │    ├─ IBookService\.java
-
 │                  │    ├─ IUserService\.java
-
 │                  │    └─ impl
-
 │                  │           ├─ BookServiceImpl\.java
-
 │                  │           └─ UserServiceImpl\.java
-
 │                  └─ utils
-
 │                         ├─ JWTUtil\.java
-
 │                         ├─ ProjectExceptionAdvice\.java
-
 │                         └─ Result\.java
-
 └─ resources
-
        ├─ application\.yml
-
        ├─ static
-
        │    ├─ css
-
        │    ├─ js
-
        │    ├─ pages
-
        │    │    ├─ books\.html
-
        │    │    └─ index\.html
-
        │    └─ plugins                
-
        └─ templates
 
 IOC容器中管理的所有bean：
