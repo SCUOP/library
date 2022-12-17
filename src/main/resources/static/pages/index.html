@@ -1,0 +1,102 @@
+<!--
+ * @Author: SCUOP
+ * @Date: 2022-12-17 12:12:35
+ * @LastEditors: SCUOP
+ * @LastEditTime: 2022-12-17 14:43:41
+ * @Description: 图书管理系统
+-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- 页面meta -->
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>library</title>
+
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+
+    <!-- 引入样式 -->
+
+    <link rel="stylesheet" href="../plugins/elementui/index.css">
+
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="hold-transition">
+
+    <div id="app">
+
+        <div class="content-header">
+
+            <h1>图书管理</h1>
+
+        </div>
+
+        <div class="app-container">
+
+            <div class="box">
+
+                <div class="filter-container">
+                    <el-input placeholder="ID" v-model="user.id" style="width: 200px;" class="filter-item"
+                        type="number"></el-input>
+                    <el-input placeholder="账号" v-model="user.username" style="width: 200px;" class="filter-item"
+                        clearable></el-input>
+                    <el-input placeholder="密码" v-model="user.password" style="width: 200px;" class="filter-item"
+                        clearable show-password></el-input>
+                    <el-button @click="login()" class="dalfBut">登录</el-button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<!-- 引入组件库 -->
+
+<script src="../js/vue.js"></script>
+
+<script src="../plugins/elementui/index.js"></script>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+<script src="../js/axios-0.18.0.js"></script>
+
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            user: {
+                id: 1,
+                username: "",
+                password: "",
+            }
+        },
+
+        methods: {
+            login() {
+                axios.post("/index", this.user).then((res) => {
+                    //判断当前操作是否成功
+                    if (res.data.flag) {
+                        localStorage.setItem("token", res.data.msg);
+                    } else {
+                        this.$message.error(res.data.msg);
+                    }
+                })
+            },
+        }
+    })
+</script>
+
+</html>
