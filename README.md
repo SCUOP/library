@@ -13,6 +13,8 @@ Maven\-3\.8\.6，Java19，Spring\-Boot\-2\.7\.6\(mybatis\-plus暂时未适配Spr
 
 工作环境：vscode，MySQL Shell，windows11
 
+本地运行路径: http://localhost:8080/pages/books.html
+
 #### 分析
 
 注：该项目为SSM项目，拟采用token的方式进行管理员登录的验证，以及验证后对数据库进行增删改查以实现图书管理功能。但是由于token的前端vue的拦截器目前还不会，所有只把后端的接口做了出来，测试后可以正常的生成并验证token。在实际运行做就没有将登录验证加至拦截器中而将其注释掉了。
